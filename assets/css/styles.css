@@ -60,6 +60,9 @@ body {
 
 .header {
     background: #10375C;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .content {
@@ -73,8 +76,8 @@ body {
 .navbar {
     display: flex;
     justify-content: space-between;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background: #10375C;
     align-items: center;
 
@@ -502,6 +505,7 @@ body {
 .menber {
     margin-top: 85px;
     text-align: center;
+    padding-bottom: 85px;
 }
 
 .menber__info {
@@ -542,6 +546,7 @@ body {
 }
 
 .menber-item .img-avatar:hover {
+    /* phóng lớn ảnh lên */
     transform: scale(1.1);
 }
 
@@ -591,4 +596,339 @@ body {
 
 .menber__control-next-icon {
     rotate: 180deg;
+}
+
+/* -----install----- */
+.install {
+    margin-top: 180px;
+    margin-bottom: 85px;
+}
+
+.install__wrapper {
+    display: flex;
+    border-radius: 4px;
+    background: #2E80CE;
+    padding: 0 70px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.install__img {
+    display: block;
+    width: 284px;
+    height: 552px;
+    object-fit: cover;
+    margin-top: -95px;
+}
+
+.install__content .service-top__heading {
+    width: 489px;
+    color: #FFF;
+}
+
+.install__content .service-top__desc {
+    margin-top: 18px;
+    width: 586px;
+    color: #FFF;
+}
+
+.install__row {
+    display: flex;
+    gap: 28px;
+}
+
+.install__btn {
+    padding: 0;
+    margin-top: 38px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+/* -----new----- */
+.new {
+    padding-top: 85px;
+    padding-bottom: 85px;
+}
+
+.new_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.new__content .service-top__heading {
+    width: 470px;
+}
+
+.new__Main {
+    display: flex;
+    gap: 30px;
+
+}
+
+.new__control {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.new__content-desc {
+    margin-top: 28px;
+    margin-bottom: 28px;
+    color: #10375C;
+    font-family: Inter;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 28px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+
+.new__list {
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0px 18px 50px 0px rgba(0, 0, 0, 0.05);
+}
+
+.new__item-img {
+    width: 270px;
+    height: 172px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+.new__item {
+    width: 270px;
+    margin-bottom: 21px;
+}
+
+.new__item-info {
+    width: 226px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.new__item-title {
+    margin-top: 18px;
+    color: #10375C;
+    font-family: "Sora", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 26px;
+}
+
+.new__item-desc {
+    color: #575F66;
+    font-family: "Sora", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 24px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+
+.new__item a {
+    color: #2E80CE;
+    font-family: "Sora", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.new__item a:hover {
+    color: #10375C;
+}
+
+.new__list:hover {
+    transform: scale(1.1);
+}
+
+/* -----appointment----- */
+.appointment {
+    padding-top: 85px;
+    padding-bottom: 170px;
+}
+
+.appointment__box {
+    background: #F6FBFF;
+    padding: 100px 0;
+}
+
+.appointment__box .service-top__heading {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.appointment__box .service-top__heading::after {
+    position: absolute;
+    content: "";
+    width: 136px;
+    height: 2px;
+    background: #2E80CE;
+    bottom: -18px;
+}
+
+.appointment__box .service-top__desc {
+    margin-top: 38px;
+    width: 617px;
+    color: #575F66;
+    text-align: center;
+    font-family: "Sora", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 28px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.appointment__box .btn {
+    margin-top: 38px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* -----footer----- */
+.footer {
+    padding: 100px 0 42px 0;
+    background: #10375C;
+}
+
+.footer__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__desc {
+    margin-top: 22px;
+    width: 336px;
+    color: #A9B3BB;
+    font-family: "Open Sans";
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+
+
+.footer__icon-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 28px;
+}
+
+.icon__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    width: 32px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.footer_heading {
+    color: #FFF;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+
+.footer__link {
+    color: #A9B3BB;
+    font-family: "Open Sans";
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.footer__item {
+    margin-bottom: 10px;
+}
+
+.footer__item :last-of-type {
+    margin-bottom: 0;
+}
+
+.footer__list .footer__item:last-child {
+    margin-bottom: 0;
+}
+
+.icon__link img {
+    max-width: 100%;
+    height: auto;
+}
+
+.other {
+    margin-bottom: 24px;
+}
+
+.other .footer__item:nth-child(1) {
+    margin-bottom: 14px;
+}
+
+.icon__link:nth-child(1) {
+    background: #2E80CE;
+}
+
+.footer__submit-form {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer__submit-form input {
+    width: 212px;
+    height: 46px;
+    border-radius: 4px;
+    background: transparent;
+    border: none;
+    border: 1px solid #406181;
+}
+
+.footer__submit-form {
+    margin-top: 10px;
+}
+
+.footer__submit {
+    border: none;
+    width: 108px;
+    height: 46px;
+    border-radius: 4px;
+    color: #FFF;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+}
+
+.line {
+    width: 1170px;
+    height: 1px;
+    flex-shrink: 0;
+    background: #406181;
+}
+
+.footer__copyright {
+    text-align: center;
+    margin-top: 28px;
+    color: #AAB3BA;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 26px;
+    /* 185.714% */
 }
